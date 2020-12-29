@@ -1,0 +1,44 @@
+@import '../../../colors.scss';
+
+@media (min-width: 320px) {
+  .searchBar {
+    margin: 14px 0;
+  }
+  .searchBar input {
+    margin: 0;
+    padding: 10px 0 10px 31px;
+    width: 192px;
+    max-width: 192px;
+    border: none;
+    border-radius: 20px;
+    background-color: $grey_f4;
+    background-image: url('./img/search.svg');
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 11px 13px;
+  }
+  ::placeholder {
+    color: $grey_c4;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchBar input {
+    margin: 0;
+    padding: 10px 0 10px 40px;
+    width: 280px;
+    max-width: 280px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: $white;
+    background-image: url('./img/search.svg');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: 11px 13px;
+  }
+  ::placeholder {
+    font-size: 20px;
+  }
+}

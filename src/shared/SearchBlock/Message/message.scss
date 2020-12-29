@@ -1,0 +1,37 @@
+@import '../../../colors.scss';
+
+@media (min-width: 320px) {
+  .messagesCount {
+    margin: 0;
+    padding: 3px 6px;
+    color: $white;
+    background-color: $orange;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 9px;
+  }
+  .messageIcon {
+    margin-left: 4px;
+    transform: translateY(2px);
+    width: 12px;
+    height: 10px;
+  }     
+}
+
+@media (min-width: 1024px) {
+  .messagesCount {
+    margin: 0;
+    padding: 2px 6px;
+    color: $white;
+    background-color: $orange;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 14px;
+  }
+  .messageIcon {
+    margin-left: 12px;
+    transform: translateY(3px);
+    width: 20px;
+    height: 16px;
+  }
+}

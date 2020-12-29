@@ -1,0 +1,61 @@
+@import '../../colors.scss';
+
+@media (min-width: 320px) {
+  .sortBlock {
+    font-size: 12px;
+  }
+  .sortList {
+    background-color: $white;
+  }
+  .sortItem {
+    margin: 0 23px;
+    padding: 11px 0;
+    border-top: 1px solid $grey_ec;
+  }
+  .sortItem:first-child {
+    border-top: none;
+  }
+  .sortItem:not(:first-child) {
+    display: none;
+  }
+  .dropdownIcon {
+    width: 10px;
+    height: 6px;
+    float: right;
+    transform: translateY(5px);
+  }
+  .itemIcon {
+    width: 9px;
+    height: 11px;
+  }
+}
+  
+@media (min-width: 1024px) {
+  .sortBlock {
+    font-size: 20px;
+  }
+  .sortList {
+    background-color: transparent;
+  }
+  .sortItem {
+    margin: 0 23px;
+    padding: 11px 0;
+    border-top: none;
+  }
+  .sortItem:first-child {
+    border-top: none;
+  }
+  .sortItem:not(:first-child) {
+    display: none;
+  }
+  .dropdownIcon {
+    width: 14px;
+    height: 8px;
+    transform: translateY(8px);
+  }
+  .itemIcon {
+    width: 14px;
+    height: 16px;
+  }
+}
+  
