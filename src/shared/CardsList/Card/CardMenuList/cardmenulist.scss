@@ -1,0 +1,94 @@
+@import '../../../../colors.scss';
+
+@media (min-width: 320px) {
+    .cardMenuList {
+        position: absolute;
+        right: 14px;
+        top: -40px;
+        min-width: 145px;
+        width: auto;
+        background-color: $white;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+      
+      .cardMenuListItem {
+        padding: 10px 0;
+        margin: 0 20px;
+        color: $grey_99;
+        font-size: 12px;
+      }
+
+      .cardMenuListItem:not(:first-child) {
+        border-top: 1px solid $grey_ec;
+      }
+
+      .cardMenuListClose {
+        padding: 10px 0;
+        background-color: $grey_d9;
+        color: $grey_99;
+        text-align: center;
+        font-size: 12px;
+        border-top: none;
+      }
+
+      .hideIcon {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+        transform: translateY(2px) scale(0.857);
+      }
+
+      .complainIcon {
+        width: 16px;
+        height: 14px;
+        margin-right: 4px;
+        transform: translateY(2px) scale(0.857);
+      }
+}
+
+@media all and (min-width: 1024px) { 
+    .cardMenuList {
+        position: absolute;
+        right: 0;
+        top: 31px;
+        min-width: 160px;
+        width: auto;
+        background-color: $white;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+      }
+      
+      .cardMenuListItem {
+        padding: 10px 0;
+        margin: 0 20px;
+        color: $grey_99;
+        font-size: 14px;
+      }
+
+      .cardMenuListItem:not(:first-child) {
+        border-top: 1px solid $grey_ec;
+      }
+
+      .cardMenuListClose {
+        padding: 10px 0;
+        background-color: $grey_d9;
+        color: $grey_99;
+        text-align: center;
+        font-size: 14px;
+        border-top: none;
+      }
+
+      .hideIcon {
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+        transform: translateY(2px);
+      }
+
+      .complainIcon {
+        width: 16px;
+        height: 14px;
+        margin-right: 6px;
+      }
+}

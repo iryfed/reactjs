@@ -1,0 +1,66 @@
+@import '../../../../colors.scss';
+
+.controlArrows button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+.arrowUp > *:hover,
+.arrowUp > *:active,
+.arrowUp > *:focus {
+  fill: $orange;
+}
+.arrowDown {
+  transform: rotate(180deg);
+}
+.arrowDown > *:hover,
+.arrowDown > *:active,
+.arrowDown > *:focus {
+  fill: $green;
+}
+
+@media (min-width: 320px) {
+  .controlArrows {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .controlArrows > *:not(:last-child) {
+    margin-right: 4px;
+  }
+  .arrowDown,
+  .arrowUp {
+      width: 19px;
+      height: 10px;
+  }
+  .controlArrowCount {
+    color: $grey_c4;
+    font: 12px;
+  }
+}
+  
+@media (min-width: 1024px) {
+  .controlArrows {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 12px;
+  }
+  .controlArrows > *:not(:last-child) {
+    margin-bottom: 7px;
+    margin-right: 0;
+  }
+  .arrowUp,
+  .arrowDown {
+    width: 19px;
+    height: 10px;
+  }
+  .controlArrowCount {
+    color: $grey_c4;
+    font: 14px;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../../colors.scss';
+
+.controlComments {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+@media (min-width: 320px) {
+  .controlComments {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #c4c4c4;
+  }
+  .controlComments > *:not(:last-child) {
+    margin-right: 4px;
+  }
+  .commentIcon {
+    width: 15px;
+    height: 15px;
+  }
+  .commentsCount {
+    color: $grey_c4;
+    font-size: 12px;
+  }
+}
+  
+@media (min-width: 1024px) {
+  .controlComments {
+    display: none;
+  }
+  .commentsCount {
+    color: $grey_c4;
+    font-size: 14px;
+  }
+}

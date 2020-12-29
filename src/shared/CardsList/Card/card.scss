@@ -1,0 +1,41 @@
+@import '../../../colors.scss';
+
+.postLink::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  position: relative;
+}
+
+@media all and (min-width: 320px) {
+  .card {
+    margin-top: 20px;
+    background-color: $white;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+}
+
+@media all and (min-width: 1024px) {
+    .card {
+      padding: 40px;
+      background-color: $white;
+      border-radius: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+      justify-content: flex-start;
+    }
+}

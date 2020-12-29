@@ -1,0 +1,45 @@
+@import '../../../../colors.scss';
+
+.actionIcon {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+@media (min-width: 320px) {
+  .controlActions {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .actionIcon {
+    width: 20px;
+    height: 20px;
+    background-color: $grey_c4;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  .actionIcon .shareIcon {
+    width: 10px;
+    height: 8px;
+    transform: translate(0px, 1px);
+  }
+  .actionIcon .saveIcon {
+    width: 10px;
+    height: 10px;
+    transform: translate(0px, 1px);
+  }
+}
+  
+  @media (min-width: 1024px) {
+    .controlActions {
+      display: none;
+    }
+  }

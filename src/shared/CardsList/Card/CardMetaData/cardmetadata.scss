@@ -1,0 +1,63 @@
+@import '../../../../colors.scss';
+
+.metaUsername {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 320px) {
+  .cardMetaData {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  .metaPublic {
+    display: none;
+  }
+  .metaAvatar {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .metaUsername {
+    margin-right: 3px;
+    font-size: 10px;
+  }
+  .metaPubdate {
+    font-size: 10px;
+    color: $grey_99;
+  }
+}
+  
+@media (min-width: 1024px) {
+  .cardMetaData {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8px;
+    flex-direction: row-reverse;
+  }
+  .metaPublic {
+    display: inline-block;
+  }
+  .metaAvatar {
+    margin-left: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .metaUsername {
+    margin-left: 3px;
+    font-size: 14px;
+  }
+  .metaPubdate {
+    font-size: 14px;
+    color: $grey_99;
+  }
+}

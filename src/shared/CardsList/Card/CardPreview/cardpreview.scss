@@ -1,0 +1,24 @@
+@media (min-width: 320px) {
+  .cardPreview {
+    width: 100%;
+  }
+  .cardPreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+}
+  
+@media (min-width: 1024px) {
+  .cardPreview {
+    width: 190px;
+    order: -1;
+  }
+  .cardPreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+}

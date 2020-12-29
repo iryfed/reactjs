@@ -1,0 +1,72 @@
+@import '../../../../colors.scss';
+
+.cardMenu {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 320px) {
+  .cardMenu {
+    position: absolute;
+    right: 14px;
+    top: 15px;
+    padding-left: 6px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(51,51,51,.1);
+    }
+  }
+  .cardMenu span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: $grey_d9;
+    border-radius: 50%;
+  }
+  .cardMenu span:not(:last-child) {
+    margin-right: 2px;
+  }
+}
+  
+@media all and (min-width: 1024px) {
+  .cardMenu {
+    position: absolute;
+    right: 86px;
+    top: 80px;
+    padding-top: 6px;
+    padding-left: 13px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(51,51,51,.1);
+    }
+  }
+  .cardMenu span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: $grey_d9;
+    border-radius: 50%;
+  }
+  .cardMenu span:not(:last-child) {
+    margin-bottom: 2px;
+  }
+}
