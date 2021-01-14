@@ -1,18 +1,21 @@
 import React from 'react';
 import styles from './cardmenulist.scss';
+import { ComplainIcon } from '../../../icons/ComplainIcon.tsx';
+import { Icon, EIcons } from '../../../Icon/Icon.tsx';
 
-export function CardMenuList() {
+
+interface ICardMenuList {
+  postId: string;
+}
+
+export function CardMenuList({ postId }: ICardMenuList) {
   return (
     <ul className={styles.cardMenuList}>
-      <li className={styles.cardMenuListItem}>
-        <svg className={styles.hideIcon}>
-          <path d="M7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 5.705 1.841 4.515 2.583 3.57L10.43 11.417C9.485 12.159 8.295 12.6 7 12.6ZM11.417 10.43L3.57 2.583C4.515 1.841 5.705 1.4 7 1.4C10.094 1.4 12.6 3.906 12.6 7C12.6 8.295 12.159 9.485 11.417 10.43Z" fill="#999999"/>
-        </svg>
+      <li className={styles.cardMenuListItem} onClick={() => console.log(postId)}>
+        <Icon name={EIcons.hide} size={16} mobileSize={12} desktopSize={16} />
         Скрыть</li>
       <li className={styles.cardMenuListItem}>
-        <svg className={styles.complainIcon}>
-          <path d="M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.8421H7.27273V5.89474H8.72727V8.8421Z" fill="#999999"/>
-        </svg>
+        <ComplainIcon />
         Пожаловаться</li>
       <li className={styles.cardMenuListClose}>Закрыть</li>
     </ul>

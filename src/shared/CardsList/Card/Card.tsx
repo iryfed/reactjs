@@ -22,7 +22,7 @@ export function Card() {
         </CardContent>
         <CardPreview />
         <Dropdown button={<CardMenu />}>
-          <CardMenuList />
+          <CardMenuList postId="123" />
         </Dropdown>
         <CardControls>
           <ControlArrows />

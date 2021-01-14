@@ -31,20 +31,6 @@
         font-size: 12px;
         border-top: none;
       }
-
-      .hideIcon {
-        width: 14px;
-        height: 14px;
-        margin-right: 4px;
-        transform: translateY(2px) scale(0.857);
-      }
-
-      .complainIcon {
-        width: 16px;
-        height: 14px;
-        margin-right: 4px;
-        transform: translateY(2px) scale(0.857);
-      }
 }
 
 @media all and (min-width: 1024px) { 
@@ -77,18 +63,5 @@
         text-align: center;
         font-size: 14px;
         border-top: none;
-      }
-
-      .hideIcon {
-        width: 14px;
-        height: 14px;
-        margin-right: 6px;
-        transform: translateY(2px);
-      }
-
-      .complainIcon {
-        width: 16px;
-        height: 14px;
-        margin-right: 6px;
       }
 }
