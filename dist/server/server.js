@@ -76,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"cardMenuList\": \"cardmenulist__cardMenuList__3Ns4D\",\n\t\"cardMenuListItem\": \"cardmenulist__cardMenuListItem__2m4QO\",\n\t\"cardMenuListClose\": \"cardmenulist__cardMenuListClose__3_LRk\",\n\t\"hideIcon\": \"cardmenulist__hideIcon__2-Qys\",\n\t\"complainIcon\": \"cardmenulist__complainIcon__3fcvC\"\n});\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMenuList/cardmenulist.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"cardMenuList\": \"cardmenulist__cardMenuList__3Ns4D\",\n\t\"cardMenuListItem\": \"cardmenulist__cardMenuListItem__2m4QO\",\n\t\"cardMenuListClose\": \"cardmenulist__cardMenuListClose__3_LRk\"\n});\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMenuList/cardmenulist.scss?");
 
 /***/ }),
 
@@ -206,6 +206,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/shared/Icon/icon.scss":
+/*!***********************************!*\
+  !*** ./src/shared/Icon/icon.scss ***!
+  \***********************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"hideIcon\": \"icon__hideIcon__26PNc\",\n\t\"complainIcon\": \"icon__complainIcon__3peXU\",\n\t\"s10\": \"icon__s10__OwcLp\",\n\t\"s12\": \"icon__s12__3OzCI\",\n\t\"s14\": \"icon__s14__3f61e\",\n\t\"s16\": \"icon__s16__2OiBE\",\n\t\"m10\": \"icon__m10__2lheT\",\n\t\"m12\": \"icon__m12__1smp5\",\n\t\"d14\": \"icon__d14__3U_e5\",\n\t\"d16\": \"icon__d16__3cjpP\"\n});\n\n\n//# sourceURL=webpack://reactjs/./src/shared/Icon/icon.scss?");
+
+/***/ }),
+
 /***/ "./src/shared/Layout/layout.css":
 /*!**************************************!*\
   !*** ./src/shared/Layout/layout.css ***!
@@ -304,6 +318,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/shared/icons/complainicon.scss":
+/*!********************************************!*\
+  !*** ./src/shared/icons/complainicon.scss ***!
+  \********************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"complainIcon\": \"complainicon__complainIcon__KDNPo\"\n});\n\n\n//# sourceURL=webpack://reactjs/./src/shared/icons/complainicon.scss?");
+
+/***/ }),
+
 /***/ "./src/App.tsx":
 /*!*********************!*\
   !*** ./src/App.tsx ***!
@@ -354,7 +382,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Card = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar card_scss_1 = __importDefault(__webpack_require__(/*! ./card.scss */ \"./src/shared/CardsList/Card/card.scss\"));\nvar CardContent_tsx_1 = __webpack_require__(/*! ./CardContent/CardContent.tsx */ \"./src/shared/CardsList/Card/CardContent/CardContent.tsx\");\nvar CardPreview_tsx_1 = __webpack_require__(/*! ./CardPreview/CardPreview.tsx */ \"./src/shared/CardsList/Card/CardPreview/CardPreview.tsx\");\nvar CardMenu_tsx_1 = __webpack_require__(/*! ./CardMenu/CardMenu.tsx */ \"./src/shared/CardsList/Card/CardMenu/CardMenu.tsx\");\nvar CardControls_tsx_1 = __webpack_require__(/*! ./CardControls/CardControls.tsx */ \"./src/shared/CardsList/Card/CardControls/CardControls.tsx\");\nvar CardMetaData_tsx_1 = __webpack_require__(/*! ./CardMetaData/CardMetaData.tsx */ \"./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx\");\nvar CardTitle_tsx_1 = __webpack_require__(/*! ./CardTitle/CardTitle.tsx */ \"./src/shared/CardsList/Card/CardTitle/CardTitle.tsx\");\nvar ControlArrows_tsx_1 = __webpack_require__(/*! ./ControlArrows/ControlArrows.tsx */ \"./src/shared/CardsList/Card/ControlArrows/ControlArrows.tsx\");\nvar ControlComments_tsx_1 = __webpack_require__(/*! ./ControlComments/ControlComments.tsx */ \"./src/shared/CardsList/Card/ControlComments/ControlComments.tsx\");\nvar ControlActions_tsx_1 = __webpack_require__(/*! ./ControlActions/ControlActions.tsx */ \"./src/shared/CardsList/Card/ControlActions/ControlActions.tsx\");\nvar Dropdown_tsx_1 = __webpack_require__(/*! .././../Dropdown/Dropdown.tsx */ \"./src/shared/Dropdown/Dropdown.tsx\");\nvar CardMenuList_tsx_1 = __webpack_require__(/*! ./CardMenuList/CardMenuList.tsx */ \"./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx\");\nfunction Card() {\n    return (react_1.default.createElement(\"li\", { className: card_scss_1.default.item },\n        react_1.default.createElement(\"div\", { className: card_scss_1.default.card },\n            react_1.default.createElement(CardContent_tsx_1.CardContent, null,\n                react_1.default.createElement(CardMetaData_tsx_1.CardMetaData, null),\n                react_1.default.createElement(CardTitle_tsx_1.CardTitle, null)),\n            react_1.default.createElement(CardPreview_tsx_1.CardPreview, null),\n            react_1.default.createElement(Dropdown_tsx_1.Dropdown, { button: react_1.default.createElement(CardMenu_tsx_1.CardMenu, null) },\n                react_1.default.createElement(CardMenuList_tsx_1.CardMenuList, null)),\n            react_1.default.createElement(CardControls_tsx_1.CardControls, null,\n                react_1.default.createElement(ControlArrows_tsx_1.ControlArrows, null),\n                react_1.default.createElement(ControlComments_tsx_1.ControlComments, null),\n                react_1.default.createElement(ControlActions_tsx_1.ControlActions, null))),\n        react_1.default.createElement(\"a\", { className: card_scss_1.default.postLink, href: \"#post\" })));\n}\nexports.Card = Card;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/Card.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Card = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar card_scss_1 = __importDefault(__webpack_require__(/*! ./card.scss */ \"./src/shared/CardsList/Card/card.scss\"));\nvar CardContent_tsx_1 = __webpack_require__(/*! ./CardContent/CardContent.tsx */ \"./src/shared/CardsList/Card/CardContent/CardContent.tsx\");\nvar CardPreview_tsx_1 = __webpack_require__(/*! ./CardPreview/CardPreview.tsx */ \"./src/shared/CardsList/Card/CardPreview/CardPreview.tsx\");\nvar CardMenu_tsx_1 = __webpack_require__(/*! ./CardMenu/CardMenu.tsx */ \"./src/shared/CardsList/Card/CardMenu/CardMenu.tsx\");\nvar CardControls_tsx_1 = __webpack_require__(/*! ./CardControls/CardControls.tsx */ \"./src/shared/CardsList/Card/CardControls/CardControls.tsx\");\nvar CardMetaData_tsx_1 = __webpack_require__(/*! ./CardMetaData/CardMetaData.tsx */ \"./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx\");\nvar CardTitle_tsx_1 = __webpack_require__(/*! ./CardTitle/CardTitle.tsx */ \"./src/shared/CardsList/Card/CardTitle/CardTitle.tsx\");\nvar ControlArrows_tsx_1 = __webpack_require__(/*! ./ControlArrows/ControlArrows.tsx */ \"./src/shared/CardsList/Card/ControlArrows/ControlArrows.tsx\");\nvar ControlComments_tsx_1 = __webpack_require__(/*! ./ControlComments/ControlComments.tsx */ \"./src/shared/CardsList/Card/ControlComments/ControlComments.tsx\");\nvar ControlActions_tsx_1 = __webpack_require__(/*! ./ControlActions/ControlActions.tsx */ \"./src/shared/CardsList/Card/ControlActions/ControlActions.tsx\");\nvar Dropdown_tsx_1 = __webpack_require__(/*! .././../Dropdown/Dropdown.tsx */ \"./src/shared/Dropdown/Dropdown.tsx\");\nvar CardMenuList_tsx_1 = __webpack_require__(/*! ./CardMenuList/CardMenuList.tsx */ \"./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx\");\nfunction Card() {\n    return (react_1.default.createElement(\"li\", { className: card_scss_1.default.item },\n        react_1.default.createElement(\"div\", { className: card_scss_1.default.card },\n            react_1.default.createElement(CardContent_tsx_1.CardContent, null,\n                react_1.default.createElement(CardMetaData_tsx_1.CardMetaData, null),\n                react_1.default.createElement(CardTitle_tsx_1.CardTitle, null)),\n            react_1.default.createElement(CardPreview_tsx_1.CardPreview, null),\n            react_1.default.createElement(Dropdown_tsx_1.Dropdown, { button: react_1.default.createElement(CardMenu_tsx_1.CardMenu, null) },\n                react_1.default.createElement(CardMenuList_tsx_1.CardMenuList, { postId: \"123\" })),\n            react_1.default.createElement(CardControls_tsx_1.CardControls, null,\n                react_1.default.createElement(ControlArrows_tsx_1.ControlArrows, null),\n                react_1.default.createElement(ControlComments_tsx_1.ControlComments, null),\n                react_1.default.createElement(ControlActions_tsx_1.ControlActions, null))),\n        react_1.default.createElement(\"a\", { className: card_scss_1.default.postLink, href: \"#post\" })));\n}\nexports.Card = Card;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/Card.tsx?");
 
 /***/ }),
 
@@ -406,7 +434,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardMenuList = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardmenulist_scss_1 = __importDefault(__webpack_require__(/*! ./cardmenulist.scss */ \"./src/shared/CardsList/Card/CardMenuList/cardmenulist.scss\"));\nfunction CardMenuList() {\n    return (react_1.default.createElement(\"ul\", { className: cardmenulist_scss_1.default.cardMenuList },\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListItem },\n            react_1.default.createElement(\"svg\", { className: cardmenulist_scss_1.default.hideIcon },\n                react_1.default.createElement(\"path\", { d: \"M7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 5.705 1.841 4.515 2.583 3.57L10.43 11.417C9.485 12.159 8.295 12.6 7 12.6ZM11.417 10.43L3.57 2.583C4.515 1.841 5.705 1.4 7 1.4C10.094 1.4 12.6 3.906 12.6 7C12.6 8.295 12.159 9.485 11.417 10.43Z\", fill: \"#999999\" })),\n            \"\\u0421\\u043A\\u0440\\u044B\\u0442\\u044C\"),\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListItem },\n            react_1.default.createElement(\"svg\", { className: cardmenulist_scss_1.default.complainIcon },\n                react_1.default.createElement(\"path\", { d: \"M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.8421H7.27273V5.89474H8.72727V8.8421Z\", fill: \"#999999\" })),\n            \"\\u041F\\u043E\\u0436\\u0430\\u043B\\u043E\\u0432\\u0430\\u0442\\u044C\\u0441\\u044F\"),\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListClose }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\")));\n}\nexports.CardMenuList = CardMenuList;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardMenuList = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardmenulist_scss_1 = __importDefault(__webpack_require__(/*! ./cardmenulist.scss */ \"./src/shared/CardsList/Card/CardMenuList/cardmenulist.scss\"));\nvar ComplainIcon_tsx_1 = __webpack_require__(/*! ../../../icons/ComplainIcon.tsx */ \"./src/shared/icons/ComplainIcon.tsx\");\nvar Icon_tsx_1 = __webpack_require__(/*! ../../../Icon/Icon.tsx */ \"./src/shared/Icon/Icon.tsx\");\nfunction CardMenuList(_a) {\n    var postId = _a.postId;\n    return (react_1.default.createElement(\"ul\", { className: cardmenulist_scss_1.default.cardMenuList },\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListItem, onClick: function () { return console.log(postId); } },\n            react_1.default.createElement(Icon_tsx_1.Icon, { name: Icon_tsx_1.EIcons.hide, size: 16, mobileSize: 12, desktopSize: 16 }),\n            \"\\u0421\\u043A\\u0440\\u044B\\u0442\\u044C\"),\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListItem },\n            react_1.default.createElement(ComplainIcon_tsx_1.ComplainIcon, null),\n            \"\\u041F\\u043E\\u0436\\u0430\\u043B\\u043E\\u0432\\u0430\\u0442\\u044C\\u0441\\u044F\"),\n        react_1.default.createElement(\"li\", { className: cardmenulist_scss_1.default.cardMenuListClose }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\")));\n}\nexports.CardMenuList = CardMenuList;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx?");
 
 /***/ }),
 
@@ -540,6 +568,19 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 
 /***/ }),
 
+/***/ "./src/shared/Icon/Icon.tsx":
+/*!**********************************!*\
+  !*** ./src/shared/Icon/Icon.tsx ***!
+  \**********************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Icon = exports.EIcons = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar icon_scss_1 = __importDefault(__webpack_require__(/*! ./icon.scss */ \"./src/shared/Icon/icon.scss\"));\nvar classnames_1 = __importDefault(__webpack_require__(/*! classnames */ \"classnames\"));\nvar EIcons;\n(function (EIcons) {\n    EIcons[\"hide\"] = \"hideIcon\";\n    EIcons[\"complain\"] = \"complainIcon\";\n})(EIcons = exports.EIcons || (exports.EIcons = {}));\nfunction Icon(props) {\n    var _a, _b;\n    var size = props.size, mobileSize = props.mobileSize, desktopSize = props.desktopSize, name = props.name;\n    var classes = classnames_1.default(icon_scss_1.default[\"s\" + size], (_a = {}, _a[icon_scss_1.default[\"m\" + mobileSize]] = mobileSize, _a), (_b = {}, _b[icon_scss_1.default[\"m\" + desktopSize]] = desktopSize, _b), icon_scss_1.default[name]);\n    return (react_1.default.createElement(\"div\", { className: classes }));\n}\nexports.Icon = Icon;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/Icon/Icon.tsx?");
+
+/***/ }),
+
 /***/ "./src/shared/Layout/Layout.tsx":
 /*!**************************************!*\
   !*** ./src/shared/Layout/Layout.tsx ***!
@@ -628,6 +669,32 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.ThreadTitle = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar threadtitle_scss_1 = __importDefault(__webpack_require__(/*! ./threadtitle.scss */ \"./src/shared/ThreadTitle/threadtitle.scss\"));\nfunction ThreadTitle() {\n    return (react_1.default.createElement(\"h1\", { className: threadtitle_scss_1.default.threadTitle }, \"\\u0414\\u0438\\u0441\\u043A\\u0443\\u0441\\u0441\\u0438\\u0438\"));\n}\nexports.ThreadTitle = ThreadTitle;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/ThreadTitle/ThreadTitle.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/icons/ComplainIcon.tsx":
+/*!*******************************************!*\
+  !*** ./src/shared/icons/ComplainIcon.tsx ***!
+  \*******************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.ComplainIcon = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar complainicon_scss_1 = __importDefault(__webpack_require__(/*! ./complainicon.scss */ \"./src/shared/icons/complainicon.scss\"));\nfunction ComplainIcon() {\n    return (react_1.default.createElement(\"svg\", { className: complainicon_scss_1.default.complainIcon },\n        react_1.default.createElement(\"path\", { d: \"M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.8421H7.27273V5.89474H8.72727V8.8421Z\", fill: \"#999999\" })));\n}\nexports.ComplainIcon = ComplainIcon;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/icons/ComplainIcon.tsx?");
+
+/***/ }),
+
+/***/ "classnames":
+/*!*****************************!*\
+  !*** external "classnames" ***!
+  \*****************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+eval("module.exports = require(\"classnames\");;\n\n//# sourceURL=webpack://reactjs/external_%22classnames%22?");
 
 /***/ }),
 
