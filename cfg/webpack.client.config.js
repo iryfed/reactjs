@@ -18,6 +18,9 @@ module.exports = {
     path: path.resolve(__dirname, '../dist/client'),
     filename: 'client.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.scss','.css']
+  },
   module: {
     rules: [
       {
