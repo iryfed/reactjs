@@ -1,11 +1,26 @@
 import React from 'react';
 import styles from './avatar.scss';
+import { EIcons, Icon } from '../../Icon/Icon';
 
-export function Avatar() {
+interface IAvatarProps {
+  avatarSrc ?: string
+  username ?: string
+}
+
+export function Avatar({ avatarSrc, username}: IAvatarProps) {
   return (
-    <div className={styles.avatar}>
-      <img className={styles.avatarIcon} src="https://image.shutterstock.com/image-photo/isolated-shot-young-handsome-male-260nw-762790210.jpg" alt="Avatar"/>
-      <a className={styles.avatarName}>Константин</a>
-    </div>
+    <a
+      href="https://www.reddit.com/api/v1/authorize?client_id=oBtLDkWhhgV-MQ&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read submit identity"
+      className={styles.avatar}
+    >
+      {avatarSrc
+        ? <img src={avatarSrc} alt="user avatar" className={styles.avatarIcon} />
+        : <Icon name={EIcons.anonim} size={50} mobileSize={30} desktopSize={50} />
+      }
+      {username 
+        ? <a className={styles.avatarName}></a>
+        : <span className={styles.avatarAnonim}>Аноним</span>
+      }
+    </a>
   );
 }

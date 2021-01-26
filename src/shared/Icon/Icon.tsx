@@ -2,11 +2,12 @@ import React, { Children } from 'react';
 import styles from './icon.scss';
 import classNames from 'classnames';
 
-type TSizes = 10 | 12 | 14 | 16;
+type TSizes = 10 | 12 | 14 | 16 | 30 | 50;
 
 export enum EIcons {
   hide = 'hideIcon',
   complain = 'complainIcon',
+  anonim = 'anonimIcon'
 }
 
 interface IIcons {

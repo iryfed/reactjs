@@ -1,1 +1,2 @@
-export * from './Icons';
+export * from './ComplainIcon';
+export * from './HideIcon';
