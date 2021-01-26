@@ -1,7 +1,9 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const { DefinePlugin } = require('webpack');
 
 const NODE_ENV = process.env.NODE_ENV;
+const COMMON_PLUGINS = [ new DefinePlugin({ 'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}` }) ];
 
 module.exports = {
   mode: NODE_ENV ? NODE_ENV : 'development',
@@ -49,4 +51,5 @@ module.exports = {
       },
     ],
   },
+  plugins: COMMON_PLUGINS,
 };

@@ -1,9 +1,12 @@
 const path = require('path');
+const { DefinePlugin } = require('webpack');
 
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV == 'development';
 const IS_PROD = NODE_ENV == 'production';
 const GLOBAL_CSS_REGEXP = /\.global.(sa|sc|c)ss$/;
+const DEV_PLUGINS = [];
+const COMMON_PLUGINS = [ new DefinePlugin({ 'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}` }) ];
 
 function setupDevtool() {
   if (IS_DEV) return 'eval';
@@ -57,4 +60,5 @@ module.exports = {
     ],
   },
   devtool: setupDevtool(),
+  plugins: IS_DEV ? DEV_PLUGINS.concat(COMMON_PLUGINS) : COMMON_PLUGINS,
 };
