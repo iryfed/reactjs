@@ -178,6 +178,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/shared/CardsList/cardslist.scss":
+/*!*********************************************!*\
+  !*** ./src/shared/CardsList/cardslist.scss ***!
+  \*********************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n\t\"warning\": \"cardslist__warning__lYAjG\"\n});\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/cardslist.scss?");
+
+/***/ }),
+
 /***/ "./src/shared/Dropdown/dropdown.scss":
 /*!*******************************************!*\
   !*** ./src/shared/Dropdown/dropdown.scss ***!
@@ -341,7 +355,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\n__webpack_require__(/*! ./main.global.scss */ \"./src/main.global.scss\");\nvar Layout_1 = __webpack_require__(/*! ./shared/Layout/Layout */ \"./src/shared/Layout/Layout.tsx\");\nvar Header_1 = __webpack_require__(/*! ./shared/Header/Header */ \"./src/shared/Header/Header.tsx\");\nvar Content_1 = __webpack_require__(/*! ./shared/Content/Content */ \"./src/shared/Content/Content.tsx\");\nvar CardsList_1 = __webpack_require__(/*! ./shared/CardsList/CardsList */ \"./src/shared/CardsList/CardsList.tsx\");\nvar SearchBlock_1 = __webpack_require__(/*! ./shared/SearchBlock/SearchBlock */ \"./src/shared/SearchBlock/SearchBlock.tsx\");\nvar ThreadTitle_1 = __webpack_require__(/*! ./shared/ThreadTitle/ThreadTitle */ \"./src/shared/ThreadTitle/ThreadTitle.tsx\");\nvar SortBlock_1 = __webpack_require__(/*! ./shared/SortBlock/SortBlock */ \"./src/shared/SortBlock/SortBlock.tsx\");\nfunction App() {\n    return (react_1.default.createElement(Layout_1.Layout, null,\n        react_1.default.createElement(Header_1.Header, null,\n            react_1.default.createElement(SearchBlock_1.SearchBlock, null),\n            react_1.default.createElement(ThreadTitle_1.ThreadTitle, null),\n            react_1.default.createElement(SortBlock_1.SortBlock, null)),\n        react_1.default.createElement(Content_1.Content, null,\n            react_1.default.createElement(CardsList_1.CardsList, null))));\n}\nexports.App = App;\n\n\n//# sourceURL=webpack://reactjs/./src/App.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\n__webpack_require__(/*! ./main.global.scss */ \"./src/main.global.scss\");\nvar useToken_1 = __webpack_require__(/*! ./utils/hooks/useToken */ \"./src/utils/hooks/useToken.tsx\");\nvar Layout_1 = __webpack_require__(/*! ./shared/Layout/Layout */ \"./src/shared/Layout/Layout.tsx\");\nvar Header_1 = __webpack_require__(/*! ./shared/Header/Header */ \"./src/shared/Header/Header.tsx\");\nvar Content_1 = __webpack_require__(/*! ./shared/Content/Content */ \"./src/shared/Content/Content.tsx\");\nvar CardsList_1 = __webpack_require__(/*! ./shared/CardsList/CardsList */ \"./src/shared/CardsList/CardsList.tsx\");\nvar SearchBlock_1 = __webpack_require__(/*! ./shared/SearchBlock/SearchBlock */ \"./src/shared/SearchBlock/SearchBlock.tsx\");\nvar ThreadTitle_1 = __webpack_require__(/*! ./shared/ThreadTitle/ThreadTitle */ \"./src/shared/ThreadTitle/ThreadTitle.tsx\");\nvar SortBlock_1 = __webpack_require__(/*! ./shared/SortBlock/SortBlock */ \"./src/shared/SortBlock/SortBlock.tsx\");\nvar tokenContext_1 = __webpack_require__(/*! ./shared/context/tokenContext */ \"./src/shared/context/tokenContext.tsx\");\nvar userContext_1 = __webpack_require__(/*! ./shared/context/userContext */ \"./src/shared/context/userContext.tsx\");\nvar postsContext_1 = __webpack_require__(/*! ./shared/context/postsContext */ \"./src/shared/context/postsContext.tsx\");\nfunction AppComponent() {\n    var token = useToken_1.useToken()[0];\n    return (react_1.default.createElement(tokenContext_1.tokenContext.Provider, { value: token },\n        react_1.default.createElement(userContext_1.UserContextProvider, null,\n            react_1.default.createElement(postsContext_1.PostsContextProvider, null,\n                react_1.default.createElement(Layout_1.Layout, null,\n                    react_1.default.createElement(Header_1.Header, null,\n                        react_1.default.createElement(SearchBlock_1.SearchBlock, null),\n                        react_1.default.createElement(ThreadTitle_1.ThreadTitle, null),\n                        react_1.default.createElement(SortBlock_1.SortBlock, null)),\n                    react_1.default.createElement(Content_1.Content, null,\n                        react_1.default.createElement(CardsList_1.CardsList, null)))))));\n}\nvar App = function () { return react_1.default.createElement(AppComponent, null); };\nexports.App = App;\n\n\n//# sourceURL=webpack://reactjs/./src/App.tsx?");
 
 /***/ }),
 
@@ -356,7 +370,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! runtime requirements: __webpack_exports__ */
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.indexTemplate = void 0;\nvar indexTemplate = function (content) { return \"\\n<!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\\\"utf-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n    <title>Demo</title>\\n    <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n  </head>\\n  <body>\\n    <div id=\\\"react_root\\\">\" + content + \"</div>\\n  </body>\\n</html>\\n\"; };\nexports.indexTemplate = indexTemplate;\n\n\n//# sourceURL=webpack://reactjs/./src/server/indexTemplate.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.indexTemplate = void 0;\nvar indexTemplate = function (content, token) { return \"\\n<!DOCTYPE html>\\n<html>\\n  <head>\\n    <meta charset=\\\"utf-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n    <title>Demo</title>\\n    <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n    <script>\\n      window.__token__ = '\" + token + \"'\\n    </script>\\n  </head>\\n  <body>\\n    <div id=\\\"react_root\\\">\" + content + \"</div>\\n  </body>\\n</html>\\n\"; };\nexports.indexTemplate = indexTemplate;\n\n\n//# sourceURL=webpack://reactjs/./src/server/indexTemplate.js?");
 
 /***/ }),
 
@@ -369,7 +383,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar express_1 = __importDefault(__webpack_require__(/*! express */ \"express\"));\nvar server_1 = __importDefault(__webpack_require__(/*! react-dom/server */ \"react-dom/server\"));\nvar indexTemplate_1 = __webpack_require__(/*! ./indexTemplate */ \"./src/server/indexTemplate.js\");\nvar App_1 = __webpack_require__(/*! ../App */ \"./src/App.tsx\");\nvar app = express_1.default();\napp.use('/static', express_1.default.static('./dist/client'));\napp.get('/auth', function (req, res) {\n    //req.query.code\n    res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(App_1.App())));\n});\napp.get('/', function (req, res) {\n    res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(App_1.App())));\n});\napp.listen(3000, function () {\n    console.log('Server started on http://localhost:3000');\n});\n\n\n//# sourceURL=webpack://reactjs/./src/server/server.js?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar express_1 = __importDefault(__webpack_require__(/*! express */ \"express\"));\nvar server_1 = __importDefault(__webpack_require__(/*! react-dom/server */ \"react-dom/server\"));\nvar indexTemplate_1 = __webpack_require__(/*! ./indexTemplate */ \"./src/server/indexTemplate.js\");\nvar App_1 = __webpack_require__(/*! ../App */ \"./src/App.tsx\");\nvar axios_1 = __importDefault(__webpack_require__(/*! axios */ \"axios\"));\nvar app = express_1.default();\napp.use('/static', express_1.default.static('./dist/client'));\napp.get('/auth', function (req, res) {\n    axios_1.default.post('https://www.reddit.com/api/v1/access_token', \"grant_type=authorization_code&code=\" + req.query.code + \"&redirect_uri=http://localhost:3000/auth\", {\n        auth: { username: 'oBtLDkWhhgV-MQ', password: 'KHc7eplg3TQ8bWfp9PNWZJZMm-6R1A' },\n        headers: { 'Content-type': 'application/x-www-form-urlencoded' }\n    }).then(function (_a) {\n        var data = _a.data;\n        res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(App_1.App()), data['access_token']));\n    }).catch(console.log);\n});\napp.get('/', function (req, res) {\n    res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(App_1.App())));\n});\napp.listen(3000, function () {\n    console.log('Server started on http://localhost:3000');\n});\n\n\n//# sourceURL=webpack://reactjs/./src/server/server.js?");
 
 /***/ }),
 
@@ -382,7 +396,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Card = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar card_scss_1 = __importDefault(__webpack_require__(/*! ./card.scss */ \"./src/shared/CardsList/Card/card.scss\"));\nvar CardContent_tsx_1 = __webpack_require__(/*! ./CardContent/CardContent.tsx */ \"./src/shared/CardsList/Card/CardContent/CardContent.tsx\");\nvar CardPreview_tsx_1 = __webpack_require__(/*! ./CardPreview/CardPreview.tsx */ \"./src/shared/CardsList/Card/CardPreview/CardPreview.tsx\");\nvar CardMenu_tsx_1 = __webpack_require__(/*! ./CardMenu/CardMenu.tsx */ \"./src/shared/CardsList/Card/CardMenu/CardMenu.tsx\");\nvar CardControls_tsx_1 = __webpack_require__(/*! ./CardControls/CardControls.tsx */ \"./src/shared/CardsList/Card/CardControls/CardControls.tsx\");\nvar CardMetaData_tsx_1 = __webpack_require__(/*! ./CardMetaData/CardMetaData.tsx */ \"./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx\");\nvar CardTitle_tsx_1 = __webpack_require__(/*! ./CardTitle/CardTitle.tsx */ \"./src/shared/CardsList/Card/CardTitle/CardTitle.tsx\");\nvar ControlArrows_tsx_1 = __webpack_require__(/*! ./ControlArrows/ControlArrows.tsx */ \"./src/shared/CardsList/Card/ControlArrows/ControlArrows.tsx\");\nvar ControlComments_tsx_1 = __webpack_require__(/*! ./ControlComments/ControlComments.tsx */ \"./src/shared/CardsList/Card/ControlComments/ControlComments.tsx\");\nvar ControlActions_tsx_1 = __webpack_require__(/*! ./ControlActions/ControlActions.tsx */ \"./src/shared/CardsList/Card/ControlActions/ControlActions.tsx\");\nvar Dropdown_tsx_1 = __webpack_require__(/*! .././../Dropdown/Dropdown.tsx */ \"./src/shared/Dropdown/Dropdown.tsx\");\nvar CardMenuList_tsx_1 = __webpack_require__(/*! ./CardMenuList/CardMenuList.tsx */ \"./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx\");\nfunction Card() {\n    return (react_1.default.createElement(\"li\", { className: card_scss_1.default.item },\n        react_1.default.createElement(\"div\", { className: card_scss_1.default.card },\n            react_1.default.createElement(CardContent_tsx_1.CardContent, null,\n                react_1.default.createElement(CardMetaData_tsx_1.CardMetaData, null),\n                react_1.default.createElement(CardTitle_tsx_1.CardTitle, null)),\n            react_1.default.createElement(CardPreview_tsx_1.CardPreview, null),\n            react_1.default.createElement(Dropdown_tsx_1.Dropdown, { button: react_1.default.createElement(CardMenu_tsx_1.CardMenu, null) },\n                react_1.default.createElement(CardMenuList_tsx_1.CardMenuList, { postId: \"123\" })),\n            react_1.default.createElement(CardControls_tsx_1.CardControls, null,\n                react_1.default.createElement(ControlArrows_tsx_1.ControlArrows, null),\n                react_1.default.createElement(ControlComments_tsx_1.ControlComments, null),\n                react_1.default.createElement(ControlActions_tsx_1.ControlActions, null))),\n        react_1.default.createElement(\"a\", { className: card_scss_1.default.postLink, href: \"#post\" })));\n}\nexports.Card = Card;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/Card.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Card = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar card_scss_1 = __importDefault(__webpack_require__(/*! ./card.scss */ \"./src/shared/CardsList/Card/card.scss\"));\nvar CardContent_1 = __webpack_require__(/*! ./CardContent/CardContent */ \"./src/shared/CardsList/Card/CardContent/CardContent.tsx\");\nvar CardPreview_1 = __webpack_require__(/*! ./CardPreview/CardPreview */ \"./src/shared/CardsList/Card/CardPreview/CardPreview.tsx\");\nvar CardMenu_1 = __webpack_require__(/*! ./CardMenu/CardMenu */ \"./src/shared/CardsList/Card/CardMenu/CardMenu.tsx\");\nvar CardControls_1 = __webpack_require__(/*! ./CardControls/CardControls */ \"./src/shared/CardsList/Card/CardControls/CardControls.tsx\");\nvar CardMetaData_1 = __webpack_require__(/*! ./CardMetaData/CardMetaData */ \"./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx\");\nvar CardTitle_1 = __webpack_require__(/*! ./CardTitle/CardTitle */ \"./src/shared/CardsList/Card/CardTitle/CardTitle.tsx\");\nvar ControlArrows_1 = __webpack_require__(/*! ./ControlArrows/ControlArrows */ \"./src/shared/CardsList/Card/ControlArrows/ControlArrows.tsx\");\nvar ControlComments_1 = __webpack_require__(/*! ./ControlComments/ControlComments */ \"./src/shared/CardsList/Card/ControlComments/ControlComments.tsx\");\nvar ControlActions_1 = __webpack_require__(/*! ./ControlActions/ControlActions */ \"./src/shared/CardsList/Card/ControlActions/ControlActions.tsx\");\nvar Dropdown_1 = __webpack_require__(/*! .././../Dropdown/Dropdown */ \"./src/shared/Dropdown/Dropdown.tsx\");\nvar CardMenuList_1 = __webpack_require__(/*! ./CardMenuList/CardMenuList */ \"./src/shared/CardsList/Card/CardMenuList/CardMenuList.tsx\");\nfunction Card(_a) {\n    var post = _a.post, postIndex = _a.postIndex;\n    return (react_1.default.createElement(\"li\", { className: card_scss_1.default.item, key: postIndex },\n        react_1.default.createElement(\"div\", { className: card_scss_1.default.card },\n            react_1.default.createElement(CardContent_1.CardContent, null,\n                react_1.default.createElement(CardMetaData_1.CardMetaData, { metaAvatarSrc: undefined, metaUserName: post.data.author_fullname, metaUserLink: '', metaPublicDate: post.data.created }),\n                react_1.default.createElement(CardTitle_1.CardTitle, { title: post.data.title, titleUrl: post.data.url_overridden_by_dest })),\n            post.data.thumbnail\n                ? react_1.default.createElement(CardPreview_1.CardPreview, { cardPreviewSrc: post.data.thumbnail })\n                : react_1.default.createElement(\"div\", null),\n            react_1.default.createElement(Dropdown_1.Dropdown, { button: react_1.default.createElement(CardMenu_1.CardMenu, null) },\n                react_1.default.createElement(CardMenuList_1.CardMenuList, { postId: \"123\" })),\n            react_1.default.createElement(CardControls_1.CardControls, null,\n                react_1.default.createElement(ControlArrows_1.ControlArrows, null),\n                react_1.default.createElement(ControlComments_1.ControlComments, null),\n                react_1.default.createElement(ControlActions_1.ControlActions, null))),\n        react_1.default.createElement(\"a\", { className: card_scss_1.default.postLink, href: \"#post\" })));\n}\nexports.Card = Card;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/Card.tsx?");
 
 /***/ }),
 
@@ -447,7 +461,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardMetaData = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardmetadata_scss_1 = __importDefault(__webpack_require__(/*! ./cardmetadata.scss */ \"./src/shared/CardsList/Card/CardMetaData/cardmetadata.scss\"));\nfunction CardMetaData() {\n    return (react_1.default.createElement(\"div\", { className: cardmetadata_scss_1.default.cardMetaData },\n        react_1.default.createElement(\"img\", { className: cardmetadata_scss_1.default.metaAvatar, src: \"https://image.shutterstock.com/image-photo/isolated-shot-young-handsome-male-260nw-762790210.jpg\", alt: \"Avatar\" }),\n        react_1.default.createElement(\"a\", { href: \"#user\", className: cardmetadata_scss_1.default.metaUsername }, \"\\u041A\\u043E\\u043D\\u0441\\u0442\\u0430\\u043D\\u0442\\u0438\\u043D \\u041A\\u043E\\u0434\\u043E\\u0432\"),\n        react_1.default.createElement(\"div\", { className: cardmetadata_scss_1.default.metaPubdate },\n            react_1.default.createElement(\"span\", { className: cardmetadata_scss_1.default.metaPublic }, \"\\u041E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E\\u00A0\"),\n            \"8 \\u0447\\u0430\\u0441\\u043E\\u0432 \\u043D\\u0430\\u0437\\u0430\\u0434\")));\n}\nexports.CardMetaData = CardMetaData;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardMetaData = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardmetadata_scss_1 = __importDefault(__webpack_require__(/*! ./cardmetadata.scss */ \"./src/shared/CardsList/Card/CardMetaData/cardmetadata.scss\"));\nfunction CardMetaData(_a) {\n    var metaAvatarSrc = _a.metaAvatarSrc, metaUserName = _a.metaUserName, metaUserLink = _a.metaUserLink, metaPublicDate = _a.metaPublicDate;\n    return (react_1.default.createElement(\"div\", { className: cardmetadata_scss_1.default.cardMetaData },\n        metaAvatarSrc\n            ? react_1.default.createElement(\"img\", { className: cardmetadata_scss_1.default.metaAvatar, src: metaAvatarSrc, alt: \"Avatar\" })\n            : react_1.default.createElement(\"div\", null),\n        react_1.default.createElement(\"a\", { href: metaUserLink, className: cardmetadata_scss_1.default.metaUsername }, metaUserName),\n        react_1.default.createElement(\"div\", { className: cardmetadata_scss_1.default.metaPubdate },\n            react_1.default.createElement(\"span\", { className: cardmetadata_scss_1.default.metaPublic }, \"\\u041E\\u043F\\u0443\\u0431\\u043B\\u0438\\u043A\\u043E\\u0432\\u0430\\u043D\\u043E\\u00A0\"),\n            metaPublicDate)));\n}\nexports.CardMetaData = CardMetaData;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardMetaData/CardMetaData.tsx?");
 
 /***/ }),
 
@@ -460,7 +474,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardPreview = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardpreview_scss_1 = __importDefault(__webpack_require__(/*! ./cardpreview.scss */ \"./src/shared/CardsList/Card/CardPreview/cardpreview.scss\"));\nfunction CardPreview() {\n    return (react_1.default.createElement(\"div\", { className: cardpreview_scss_1.default.cardPreview },\n        react_1.default.createElement(\"img\", { src: \"https://images.ctfassets.net/hrltx12pl8hq/1zlEl4XHkxeDuukJUJyQ7Y/a149a908727e2084d503dc103a620d7f/lohp-image-img-3.jpg?fit=fill&w=480&h=270&fm=webp\", alt: \"\" })));\n}\nexports.CardPreview = CardPreview;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardPreview/CardPreview.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardPreview = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardpreview_scss_1 = __importDefault(__webpack_require__(/*! ./cardpreview.scss */ \"./src/shared/CardsList/Card/CardPreview/cardpreview.scss\"));\nfunction CardPreview(_a) {\n    var cardPreviewSrc = _a.cardPreviewSrc;\n    return (react_1.default.createElement(\"div\", { className: cardpreview_scss_1.default.cardPreview },\n        react_1.default.createElement(\"img\", { src: cardPreviewSrc, alt: \"\" })));\n}\nexports.CardPreview = CardPreview;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardPreview/CardPreview.tsx?");
 
 /***/ }),
 
@@ -473,7 +487,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardTitle = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardtitle_scss_1 = __importDefault(__webpack_require__(/*! ./cardtitle.scss */ \"./src/shared/CardsList/Card/CardTitle/cardtitle.scss\"));\nfunction CardTitle() {\n    return (react_1.default.createElement(\"h2\", { className: cardtitle_scss_1.default.cardTitle },\n        react_1.default.createElement(\"a\", { href: \"#title\" }, \"\\u0420\\u0435\\u043F\\u043B\\u0438\\u0446\\u0438\\u0440\\u043E\\u0432\\u0430\\u043D\\u043D\\u044B\\u0435 \\u0441 \\u0437\\u0430\\u0440\\u0443\\u0431\\u0435\\u0436\\u043D\\u044B\\u0445 \\u0438\\u0441\\u0442\\u043E\\u0447\\u043D\\u0438\\u043A\\u043E\\u0432 \\u0432\\u043E\\u0437\\u043C\\u043E\\u0436\\u043D\\u043E\\u0441\\u0442\\u0438\")));\n}\nexports.CardTitle = CardTitle;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardTitle/CardTitle.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardTitle = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar cardtitle_scss_1 = __importDefault(__webpack_require__(/*! ./cardtitle.scss */ \"./src/shared/CardsList/Card/CardTitle/cardtitle.scss\"));\nfunction CardTitle(_a) {\n    var title = _a.title, titleUrl = _a.titleUrl;\n    return (react_1.default.createElement(\"h2\", { className: cardtitle_scss_1.default.cardTitle },\n        react_1.default.createElement(\"a\", { href: titleUrl }, title)));\n}\nexports.CardTitle = CardTitle;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/Card/CardTitle/CardTitle.tsx?");
 
 /***/ }),
 
@@ -523,9 +537,12 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
 /*! CommonJS bailout: this is used directly at 2:23-27 */
+/*! CommonJS bailout: this is used directly at 9:26-30 */
+/*! CommonJS bailout: this is used directly at 14:20-24 */
+/*! CommonJS bailout: this is used directly at 21:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardsList = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar Card_tsx_1 = __webpack_require__(/*! ./Card/Card.tsx */ \"./src/shared/CardsList/Card/Card.tsx\");\nfunction CardsList() {\n    return (react_1.default.createElement(\"ul\", null,\n        react_1.default.createElement(Card_tsx_1.Card, null)));\n}\nexports.CardsList = CardsList;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/CardsList.tsx?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.CardsList = void 0;\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar cardslist_scss_1 = __importDefault(__webpack_require__(/*! ./cardslist.scss */ \"./src/shared/CardsList/cardslist.scss\"));\nvar postsContext_1 = __webpack_require__(/*! ../context/postsContext */ \"./src/shared/context/postsContext.tsx\");\nvar Card_1 = __webpack_require__(/*! ./Card/Card */ \"./src/shared/CardsList/Card/Card.tsx\");\nvar generateRandomIndex_1 = __webpack_require__(/*! ./../../utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\nfunction CardsList() {\n    var postsList = react_1.useContext(postsContext_1.postsContext).postsList;\n    return (react_1.default.createElement(\"div\", null, postsList\n        ? react_1.default.createElement(\"ul\", null, postsList.map(function (post) { return react_1.default.createElement(Card_1.Card, { post: post, postIndex: generateRandomIndex_1.generateRandomString() }); }))\n        : react_1.default.createElement(\"p\", { className: cardslist_scss_1.default.warning }, \"\\u0410\\u0432\\u0442\\u043E\\u0440\\u0438\\u0437\\u0443\\u0439\\u0442\\u0435\\u0441\\u044C \\u0434\\u043B\\u044F \\u043F\\u0440\\u043E\\u0441\\u043C\\u043E\\u0442\\u0440\\u0430 \\u043B\\u0443\\u0447\\u0448\\u0438\\u0445 \\u043F\\u043E\\u0441\\u0442\\u043E\\u0432\")));\n}\nexports.CardsList = CardsList;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/CardsList/CardsList.tsx?");
 
 /***/ }),
 
@@ -603,7 +620,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Avatar = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar avatar_scss_1 = __importDefault(__webpack_require__(/*! ./avatar.scss */ \"./src/shared/SearchBlock/Avatar/avatar.scss\"));\nvar Icon_1 = __webpack_require__(/*! ../../Icon/Icon */ \"./src/shared/Icon/Icon.tsx\");\nfunction Avatar(_a) {\n    var avatarSrc = _a.avatarSrc, username = _a.username;\n    return (react_1.default.createElement(\"a\", { href: \"https://www.reddit.com/api/v1/authorize?client_id=oBtLDkWhhgV-MQ&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read submit identity\", className: avatar_scss_1.default.avatar },\n        avatarSrc\n            ? react_1.default.createElement(\"img\", { src: avatarSrc, alt: \"user avatar\", className: avatar_scss_1.default.avatarIcon })\n            : react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.anonim, size: 50, mobileSize: 30, desktopSize: 50 }),\n        username\n            ? react_1.default.createElement(\"a\", { className: avatar_scss_1.default.avatarName })\n            : react_1.default.createElement(\"span\", { className: avatar_scss_1.default.avatarAnonim }, \"\\u0410\\u043D\\u043E\\u043D\\u0438\\u043C\")));\n}\nexports.Avatar = Avatar;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/SearchBlock/Avatar/Avatar.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Avatar = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar avatar_scss_1 = __importDefault(__webpack_require__(/*! ./avatar.scss */ \"./src/shared/SearchBlock/Avatar/avatar.scss\"));\nvar Icon_1 = __webpack_require__(/*! ../../Icon/Icon */ \"./src/shared/Icon/Icon.tsx\");\nfunction Avatar(_a) {\n    var avatarSrc = _a.avatarSrc, username = _a.username;\n    return (react_1.default.createElement(\"a\", { href: \"https://www.reddit.com/api/v1/authorize?client_id=oBtLDkWhhgV-MQ&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read submit identity\", className: avatar_scss_1.default.avatar },\n        avatarSrc\n            ? react_1.default.createElement(\"img\", { src: avatarSrc, alt: \"Avatar\", className: avatar_scss_1.default.avatarIcon })\n            : react_1.default.createElement(Icon_1.Icon, { name: Icon_1.EIcons.anonim, size: 50, mobileSize: 30, desktopSize: 50 }),\n        username\n            ? react_1.default.createElement(\"span\", { className: avatar_scss_1.default.avatarName }, username)\n            : react_1.default.createElement(\"span\", { className: avatar_scss_1.default.avatarAnonim }, \"\\u0410\\u043D\\u043E\\u043D\\u0438\\u043C\")));\n}\nexports.Avatar = Avatar;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/SearchBlock/Avatar/Avatar.tsx?");
 
 /***/ }),
 
@@ -640,9 +657,12 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
 /*! CommonJS bailout: this is used directly at 2:23-27 */
+/*! CommonJS bailout: this is used directly at 9:26-30 */
+/*! CommonJS bailout: this is used directly at 14:20-24 */
+/*! CommonJS bailout: this is used directly at 21:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.SearchBlock = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar searchblock_scss_1 = __importDefault(__webpack_require__(/*! ./searchblock.scss */ \"./src/shared/SearchBlock/searchblock.scss\"));\nvar Avatar_tsx_1 = __webpack_require__(/*! ./Avatar/Avatar.tsx */ \"./src/shared/SearchBlock/Avatar/Avatar.tsx\");\nvar SearchBar_tsx_1 = __webpack_require__(/*! ./SearchBar/SearchBar.tsx */ \"./src/shared/SearchBlock/SearchBar/SearchBar.tsx\");\nvar Message_tsx_1 = __webpack_require__(/*! ./Message/Message.tsx */ \"./src/shared/SearchBlock/Message/Message.tsx\");\nfunction SearchBlock() {\n    return (react_1.default.createElement(\"div\", { className: searchblock_scss_1.default.searchBlock },\n        react_1.default.createElement(Avatar_tsx_1.Avatar, null),\n        react_1.default.createElement(SearchBar_tsx_1.SearchBar, null),\n        react_1.default.createElement(Message_tsx_1.Message, null)));\n}\nexports.SearchBlock = SearchBlock;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/SearchBlock/SearchBlock.tsx?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.SearchBlock = void 0;\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar searchblock_scss_1 = __importDefault(__webpack_require__(/*! ./searchblock.scss */ \"./src/shared/SearchBlock/searchblock.scss\"));\nvar Avatar_1 = __webpack_require__(/*! ./Avatar/Avatar */ \"./src/shared/SearchBlock/Avatar/Avatar.tsx\");\nvar SearchBar_1 = __webpack_require__(/*! ./SearchBar/SearchBar */ \"./src/shared/SearchBlock/SearchBar/SearchBar.tsx\");\nvar Message_1 = __webpack_require__(/*! ./Message/Message */ \"./src/shared/SearchBlock/Message/Message.tsx\");\nvar userContext_1 = __webpack_require__(/*! ../context/userContext */ \"./src/shared/context/userContext.tsx\");\nfunction SearchBlock() {\n    var _a = react_1.useContext(userContext_1.userContext), iconImg = _a.iconImg, name = _a.name;\n    return (react_1.default.createElement(\"div\", { className: searchblock_scss_1.default.searchBlock },\n        react_1.default.createElement(Avatar_1.Avatar, { avatarSrc: iconImg, username: name }),\n        react_1.default.createElement(SearchBar_1.SearchBar, null),\n        react_1.default.createElement(Message_1.Message, null)));\n}\nexports.SearchBlock = SearchBlock;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/SearchBlock/SearchBlock.tsx?");
 
 /***/ }),
 
@@ -668,7 +688,46 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! CommonJS bailout: this is used directly at 2:23-27 */
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.ThreadTitle = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar threadtitle_scss_1 = __importDefault(__webpack_require__(/*! ./threadtitle.scss */ \"./src/shared/ThreadTitle/threadtitle.scss\"));\nfunction ThreadTitle() {\n    return (react_1.default.createElement(\"h1\", { className: threadtitle_scss_1.default.threadTitle }, \"\\u0414\\u0438\\u0441\\u043A\\u0443\\u0441\\u0441\\u0438\\u0438\"));\n}\nexports.ThreadTitle = ThreadTitle;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/ThreadTitle/ThreadTitle.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.ThreadTitle = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar threadtitle_scss_1 = __importDefault(__webpack_require__(/*! ./threadtitle.scss */ \"./src/shared/ThreadTitle/threadtitle.scss\"));\nfunction ThreadTitle() {\n    return (react_1.default.createElement(\"h1\", { className: threadtitle_scss_1.default.threadTitle }, \"\\u041B\\u0443\\u0447\\u0448\\u0438\\u0435 \\u043F\\u043E\\u0441\\u0442\\u044B\"));\n}\nexports.ThreadTitle = ThreadTitle;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/ThreadTitle/ThreadTitle.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/context/postsContext.tsx":
+/*!*********************************************!*\
+  !*** ./src/shared/context/postsContext.tsx ***!
+  \*********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.PostsContextProvider = exports.postsContext = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar usePostsData_1 = __webpack_require__(/*! ../../utils/hooks/usePostsData */ \"./src/utils/hooks/usePostsData.tsx\");\nexports.postsContext = react_1.default.createContext({});\nfunction PostsContextProvider(_a) {\n    var children = _a.children;\n    var data = usePostsData_1.usePostsData()[0];\n    return (react_1.default.createElement(exports.postsContext.Provider, { value: data }, children));\n}\nexports.PostsContextProvider = PostsContextProvider;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/context/postsContext.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/context/tokenContext.tsx":
+/*!*********************************************!*\
+  !*** ./src/shared/context/tokenContext.tsx ***!
+  \*********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.tokenContext = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nexports.tokenContext = react_1.default.createContext('');\n\n\n//# sourceURL=webpack://reactjs/./src/shared/context/tokenContext.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/context/userContext.tsx":
+/*!********************************************!*\
+  !*** ./src/shared/context/userContext.tsx ***!
+  \********************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.UserContextProvider = exports.userContext = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar useUserData_1 = __webpack_require__(/*! ../../utils/hooks/useUserData */ \"./src/utils/hooks/useUserData.tsx\");\nexports.userContext = react_1.default.createContext({});\nfunction UserContextProvider(_a) {\n    var children = _a.children;\n    var data = useUserData_1.useUserData()[0];\n    return (react_1.default.createElement(exports.userContext.Provider, { value: data }, children));\n}\nexports.UserContextProvider = UserContextProvider;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/context/userContext.tsx?");
 
 /***/ }),
 
@@ -682,6 +741,92 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.ComplainIcon = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar complainicon_scss_1 = __importDefault(__webpack_require__(/*! ./complainicon.scss */ \"./src/shared/icons/complainicon.scss\"));\nfunction ComplainIcon() {\n    return (react_1.default.createElement(\"svg\", { className: complainicon_scss_1.default.complainIcon },\n        react_1.default.createElement(\"path\", { d: \"M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.8421H7.27273V5.89474H8.72727V8.8421Z\", fill: \"#999999\" })));\n}\nexports.ComplainIcon = ComplainIcon;\n\n\n//# sourceURL=webpack://reactjs/./src/shared/icons/ComplainIcon.tsx?");
+
+/***/ }),
+
+/***/ "./src/utils/hooks/usePostsData.tsx":
+/*!******************************************!*\
+  !*** ./src/utils/hooks/usePostsData.tsx ***!
+  \******************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.usePostsData = void 0;\nvar axios_1 = __importDefault(__webpack_require__(/*! axios */ \"axios\"));\nvar react_1 = __webpack_require__(/*! react */ \"react\");\nvar tokenContext_1 = __webpack_require__(/*! ./../../shared/context/tokenContext */ \"./src/shared/context/tokenContext.tsx\");\nfunction usePostsData() {\n    var _a = react_1.useState({}), data = _a[0], setData = _a[1];\n    var token = react_1.useContext(tokenContext_1.tokenContext);\n    react_1.useEffect(function () {\n        axios_1.default.get('https://oauth.reddit.com/best?limit=10', {\n            headers: { Authorization: \"bearer \" + token }\n        }).then(function (resp) {\n            var postsData = resp.data;\n            setData({ dist: postsData.data.dist, postsList: postsData.data.children });\n        }).catch(console.log);\n    }, [token]);\n    return [data];\n}\nexports.usePostsData = usePostsData;\n\n\n//# sourceURL=webpack://reactjs/./src/utils/hooks/usePostsData.tsx?");
+
+/***/ }),
+
+/***/ "./src/utils/hooks/useToken.tsx":
+/*!**************************************!*\
+  !*** ./src/utils/hooks/useToken.tsx ***!
+  \**************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export useToken [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.useToken = void 0;\nvar react_1 = __webpack_require__(/*! react */ \"react\");\nfunction useToken() {\n    var _a = react_1.useState(''), token = _a[0], setToken = _a[1];\n    react_1.useEffect(function () {\n        if (window.__token__) {\n            setToken(window.__token__);\n        }\n    }, []);\n    return [token];\n}\nexports.useToken = useToken;\n\n\n//# sourceURL=webpack://reactjs/./src/utils/hooks/useToken.tsx?");
+
+/***/ }),
+
+/***/ "./src/utils/hooks/useUserData.tsx":
+/*!*****************************************!*\
+  !*** ./src/utils/hooks/useUserData.tsx ***!
+  \*****************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.useUserData = void 0;\nvar react_1 = __webpack_require__(/*! react */ \"react\");\nvar tokenContext_1 = __webpack_require__(/*! ./../../shared/context/tokenContext */ \"./src/shared/context/tokenContext.tsx\");\nvar axios_1 = __importDefault(__webpack_require__(/*! axios */ \"axios\"));\nfunction useUserData() {\n    var _a = react_1.useState({}), data = _a[0], setData = _a[1];\n    var token = react_1.useContext(tokenContext_1.tokenContext);\n    react_1.useEffect(function () {\n        axios_1.default.get('https://oauth.reddit.com/api/v1/me', {\n            headers: { Authorization: \"bearer \" + token }\n        }).then(function (resp) {\n            var userData = resp.data;\n            setData({ iconImg: userData.icon_img, name: userData.name });\n        }).catch(console.log);\n    }, [token]);\n    return [data];\n}\nexports.useUserData = useUserData;\n\n\n//# sourceURL=webpack://reactjs/./src/utils/hooks/useUserData.tsx?");
+
+/***/ }),
+
+/***/ "./src/utils/js/assoc.ts":
+/*!*******************************!*\
+  !*** ./src/utils/js/assoc.ts ***!
+  \*******************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__ */
+/*! CommonJS bailout: this is used directly at 2:16-20 */
+/***/ (function(__unused_webpack_module, exports) {
+
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.assoc = void 0;\nfunction assoc(key, value) {\n    return function (obj) {\n        var _a;\n        return (__assign(__assign({}, obj), (_a = {}, _a[key] = value, _a)));\n    };\n}\nexports.assoc = assoc;\n\n\n//# sourceURL=webpack://reactjs/./src/utils/js/assoc.ts?");
+
+/***/ }),
+
+/***/ "./src/utils/react/generateRandomIndex.ts":
+/*!************************************************!*\
+  !*** ./src/utils/react/generateRandomIndex.ts ***!
+  \************************************************/
+/*! flagged exports */
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export assignId [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export generateId [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export generateRandomString [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: exports.generateRandomString(...) prevents optimization as exports is passed as call context at 8:39-67 */
+/*! CommonJS bailout: exports.assignId(...) prevents optimization as exports is passed as call context at 9:41-57 */
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.generateId = exports.assignId = exports.generateRandomString = void 0;\nvar assoc_1 = __webpack_require__(/*! ../js/assoc */ \"./src/utils/js/assoc.ts\");\n//nanoid\nvar generateRandomString = function () { return Math.random().toString(36).substring(2, 15); };\nexports.generateRandomString = generateRandomString;\nexports.assignId = assoc_1.assoc('id', exports.generateRandomString());\nvar generateId = function (obj) { return exports.assignId(obj); };\nexports.generateId = generateId;\n\n\n//# sourceURL=webpack://reactjs/./src/utils/react/generateRandomIndex.ts?");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! dynamic exports */
+/*! exports [maybe provided (runtime-defined)] [no usage info] */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+eval("module.exports = require(\"axios\");;\n\n//# sourceURL=webpack://reactjs/external_%22axios%22?");
 
 /***/ }),
 
