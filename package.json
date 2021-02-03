@@ -15,20 +15,22 @@
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.20",
     "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "classnames": "^2.2.6",
     "cross-env": "^7.0.2",
     "css-loader": "^5.0.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-15": "^1.4.2",
-    "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "mocha": "^8.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
@@ -41,9 +43,8 @@
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "nodemon": "^2.0.6",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "nodemon": "^2.0.6"
   }
 }
