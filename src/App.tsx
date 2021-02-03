@@ -1,16 +1,24 @@
 import React from 'react';
 import './main.global.scss';
-import { Layout } from './shared/Layout/Layout.tsx';
-import { Header } from './shared/Header/Header.tsx';
-import { Content } from './shared/Content/Content.tsx';
-import { CardsList } from './shared/CardsList/CardsList.tsx';
-import { SearchBlock } from './shared/SearchBlock/SearchBlock.tsx';
-import { ThreadTitle } from './shared/ThreadTitle/ThreadTitle.tsx';
-import { SortBlock } from './shared/SortBlock/SortBlock.tsx';
+import { useToken } from './utils/hooks/useToken';
+import { Layout } from './shared/Layout/Layout';
+import { Header } from './shared/Header/Header';
+import { Content } from './shared/Content/Content';
+import { CardsList } from './shared/CardsList/CardsList';
+import { SearchBlock } from './shared/SearchBlock/SearchBlock';
+import { ThreadTitle } from './shared/ThreadTitle/ThreadTitle';
+import { SortBlock } from './shared/SortBlock/SortBlock';
+import { tokenContext } from './shared/context/tokenContext';
+import { UserContextProvider } from './shared/context/userContext';
+import { PostsContextProvider } from './shared/context/postsContext';
 
+function AppComponent() {
+  const [token] = useToken();
 
-export function App() {
   return (
+    <tokenContext.Provider value={token}>
+    <UserContextProvider>
+    <PostsContextProvider>
     <Layout>
       <Header>
         <SearchBlock />
@@ -21,5 +29,10 @@ export function App() {
         <CardsList />
       </Content>
     </Layout>
+    </PostsContextProvider>
+    </UserContextProvider>
+    </tokenContext.Provider>
   );
 }
+
+export const App = () => <AppComponent />;
