@@ -1,13 +1,30 @@
 import React from 'react';
 import styles from './cardmetadata.scss';
+import { dtconverter } from './../../../../utils/js/dtconverter';
 
-export function CardMetaData() {
+interface ICardMetaDataProps {
+  metaAvatarSrc ?: string;
+  metaUserName ?: string; 
+  metaUserLink ?: string;
+  metaPublicDate ?: string;
+}
+
+export function CardMetaData({
+  metaAvatarSrc, 
+  metaUserName, 
+  metaUserLink, 
+  metaPublicDate 
+}: ICardMetaDataProps) {
   return (
     <div className={styles.cardMetaData}>
-        <img className={styles.metaAvatar} src="https://image.shutterstock.com/image-photo/isolated-shot-young-handsome-male-260nw-762790210.jpg" alt="Avatar"/>
-        <a href="#user" className={styles.metaUsername}>Константин Кодов</a>
-        <div className={styles.metaPubdate}>
-        <span className={styles.metaPublic}>Опубликовано&nbsp;</span>8 часов назад</div>
+      {metaAvatarSrc
+        ? <img className={styles.metaAvatar} src={metaAvatarSrc} alt="Avatar"/>
+        : <div></div>
+      }
+      <a href={metaUserLink} className={styles.metaUsername}>{metaUserName}</a>
+      <div className={styles.metaPubdate}>
+        <span className={styles.metaPublic}>Опубликовано&nbsp;</span>{metaPublicDate}
+      </div>
     </div>
   );
 }

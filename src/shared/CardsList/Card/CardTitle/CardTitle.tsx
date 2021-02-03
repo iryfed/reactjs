@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './cardtitle.scss';
 
-export function CardTitle() {
+interface ICardTitle {
+  title: {};
+  titleUrl: string;
+}
+
+export function CardTitle({ title, titleUrl }: ICardTitle) {
   return (
     <h2 className={styles.cardTitle}>
-        <a href="#title">Реплицированные с зарубежных источников возможности</a>
+      <a href={titleUrl}>{title}</a>
     </h2>
   );
 }

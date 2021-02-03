@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './cardmenulist.scss';
-import { ComplainIcon } from '../../../icons/ComplainIcon.tsx';
-import { Icon, EIcons } from '../../../Icon/Icon.tsx';
+import { ComplainIcon } from '../../../icons/ComplainIcon';
+import { Icon, EIcons } from '../../../Icon/Icon';
 
 
 interface ICardMenuList {
