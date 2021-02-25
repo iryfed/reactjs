@@ -11,7 +11,7 @@ export function CardsList() {
   return (
     <div>
       {postsList
-      ? <ul>{postsList.map((post) => <Card post={post} postIndex={generateRandomString()} />)}</ul>
+      ? <ul>{postsList.map((post) => <Card key={generateRandomString()} post={post} />)}</ul>
       : <p className={styles.warning}>Авторизуйтесь для просмотра лучших постов</p>
       }
     </div>

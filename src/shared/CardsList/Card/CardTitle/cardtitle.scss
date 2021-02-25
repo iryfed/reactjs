@@ -21,6 +21,7 @@
   
 @media (min-width: 1024px) {
   .cardTitle {
+    width: calc(100% - 60px);
     font-size: 20px;
     line-height: 1.2;
     font-weight: normal;

@@ -1,0 +1,19 @@
+@import './../../../../colors.scss';
+
+.textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 10px 0;
+  border-color: $grey_c4;
+}
+
+.submitBtn {
+    display: block;
+    padding: 6px 10px;
+    margin: 0;
+    float: right;
+    font-size: 14px;
+    color: $white;
+    background-color: $orange;
+    border-radius: 2px;
+}

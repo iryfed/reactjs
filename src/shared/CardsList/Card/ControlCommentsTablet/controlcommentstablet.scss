@@ -8,13 +8,25 @@
   background-color: transparent;
   z-index: 1;
 }
-
 @media (min-width: 320px) {
+  .controlComments {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
   .controlComments {
     display: flex;
     flex-direction: row;
-    font-size: 12px;
-    color: $grey_c4;
+    font-size: 14px;
+    color: $grey_99;
+    &:hover,
+    &:active,
+    &:focus {
+      fill: $orange;
+    }
+  }
+  .controlComments > * {
+    color: $grey_99;
   }
   .controlComments > *:not(:last-child) {
     margin-right: 4px;
@@ -22,19 +34,11 @@
   .commentIcon {
     width: 15px;
     height: 15px;
-  }
-  .commentsCount {
-    color: $grey_c4;
-    font-size: 12px;
-  }
-}
-  
-@media (min-width: 1024px) {
-  .controlComments {
-    display: none;
-  }
-  .commentsCount {
-    color: $grey_c4;
-    font-size: 14px;
+    fill: $grey_99;
+    &:hover,
+    &:active,
+    &:focus {
+      fill: $orange;
+    }
   }
 }

@@ -9,19 +9,22 @@ import { CardTitle } from './CardTitle/CardTitle';
 import { ControlArrows } from './ControlArrows/ControlArrows';
 import { ControlComments } from './ControlComments/ControlComments';
 import { ControlActions } from './ControlActions/ControlActions';
-import { Dropdown } from '.././../Dropdown/Dropdown';
-import { CardMenuList } from './CardMenuList/CardMenuList';
+import { ControlCommentsTablet } from './ControlCommentsTablet';
+import { Dropdown } from '../../Dropdown';
+import { Comments } from './Comments';
 
 interface ICardProps {
   post: any;
-  postIndex: string;
 }
 
-export function Card({ post, postIndex }: ICardProps) {
+export function Card({ post }: ICardProps) {
   return (
-    <li className={styles.item} key={postIndex}>
+    <li className={styles.item}>
       <div className={styles.card}>
         <CardContent>
+          <Dropdown button={<ControlCommentsTablet />} isCloseBtn={true}>
+            <Comments />
+          </Dropdown>
           <CardMetaData 
             metaAvatarSrc={undefined}
             metaUserName={post.data.author_fullname}
@@ -34,9 +37,7 @@ export function Card({ post, postIndex }: ICardProps) {
           ? <CardPreview cardPreviewSrc={post.data.thumbnail} />
           : <div></div>
         }
-        <Dropdown button={<CardMenu />}>
-          <CardMenuList postId="123" />
-        </Dropdown>
+        <CardMenu />
         <CardControls>
           <ControlArrows />
           <ControlComments />

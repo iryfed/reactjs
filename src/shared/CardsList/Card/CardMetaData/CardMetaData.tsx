@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './cardmetadata.scss';
-import { dtconverter } from './../../../../utils/js/dtconverter';
 
 interface ICardMetaDataProps {
   metaAvatarSrc ?: string;
