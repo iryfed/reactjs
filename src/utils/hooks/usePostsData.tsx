@@ -1,6 +1,6 @@
-import axios from "axios";
-import { useEffect, useState, useContext } from 'react';
-import { tokenContext } from './../../shared/context/tokenContext';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useToken } from './useToken';
 
 interface IPostsData {
     dist ?: number;
@@ -8,18 +8,21 @@ interface IPostsData {
 }
 
 export function usePostsData() {
-    const [data, setData] = useState<IPostsData>({});
-    const token = useContext(tokenContext);
-    useEffect(() => {
-        axios.get(
+  const [data, setData] = useState<IPostsData>({});
+  const token = useToken();
+
+  useEffect(() => {
+    
+      axios.get(
             'https://oauth.reddit.com/best?limit=10',
             {
               headers: { Authorization: `bearer ${token}`}
             }
-        ).then((resp) => {
+      ).then((resp) => {
           const postsData = resp.data;
-          setData({ dist: postsData.data.dist, postsList: postsData.data.children });
-        }).catch(console.log)
+        setData({ dist: postsData.data.dist, postsList: postsData.data.children });
+      }).catch(console.log)
+    
     }, [token])
 
     return [data]

@@ -1,6 +1,6 @@
-import { useEffect, useState, useContext } from 'react';
-import { tokenContext } from './../../shared/context/tokenContext';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useToken } from './useToken';
 
 interface IUserData {
     name ?: string;
@@ -8,19 +8,22 @@ interface IUserData {
   }
 
 export function useUserData() {
-    const [data, setData] = useState<IUserData>({});
-    const token = useContext(tokenContext);
+  const [data, setData] = useState<IUserData>({});
+  const token = useToken();
+
   useEffect(() => {
-    axios.get(
-      'https://oauth.reddit.com/api/v1/me',
-      {
-        headers: { Authorization: `bearer ${token}`}
-      }
+
+      axios.get(
+        'https://oauth.reddit.com/api/v1/me',
+        {
+          headers: { Authorization: `bearer ${token}`}
+        }
       ).then((resp) => {
         const userData = resp.data;
         setData({ iconImg: userData.icon_img, name: userData.name });
       }).catch(console.log)
-    }, [token])
+
+  }, [token])
 
     return [data]
 }
