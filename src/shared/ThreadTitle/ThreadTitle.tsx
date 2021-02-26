@@ -4,7 +4,7 @@ import styles from './threadtitle.scss';
 export function ThreadTitle() {
   return (
     <h1 className={styles.threadTitle}>
-        Дискуссии
+        Лучшие посты
     </h1>
   );
 }
