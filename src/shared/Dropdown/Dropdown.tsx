@@ -5,13 +5,14 @@ interface IDropdownProps {
   button: React.ReactNode;
   children: React.ReactNode;
   isOpen ?: boolean;
+  isCloseBtn ?: boolean;
   onOpen ?: () => void;
   onClose ?: () => void;
 }
 
 const NOOP = () => {};
 
-export function Dropdown({ button, children, isOpen, onOpen = NOOP, onClose = NOOP }: IDropdownProps) {
+export function Dropdown({ button, children, isOpen, isCloseBtn, onOpen = NOOP, onClose = NOOP }: IDropdownProps) {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(isOpen);
   React.useEffect(() => setIsDropdownOpen(isOpen), [isOpen]);
   React.useEffect(() => isDropdownOpen ? onOpen() : onClose(), [isDropdownOpen])
@@ -29,8 +30,14 @@ export function Dropdown({ button, children, isOpen, onOpen = NOOP, onClose = NO
       </div>
       {isDropdownOpen && (
         <div className={styles.listContainer}>
-          <div className={styles.list}
-               onClick={() => setIsDropdownOpen(false)}>
+          <div className={styles.list}>
+            {isCloseBtn && (
+              <button className={styles.closeBtn} 
+                      onClick={() => setIsDropdownOpen(false)}>
+                <span></span>
+                <span></span>
+              </button>
+            )}
             {children}
           </div>
         </div>
