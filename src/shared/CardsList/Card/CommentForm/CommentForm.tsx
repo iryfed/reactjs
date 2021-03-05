@@ -1,7 +1,9 @@
 import React, { ChangeEvent, FormEvent, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { updateComment } from '../../../redux/reducers/commentReducer';
+import { RootState } from '../../../redux/reducers/rootReducer';
 import styles from './commentform.scss';
-import { commentState, updateComment } from '../../../redux/commentReducer';
+
 
 
 interface ICommentFormProps {
@@ -9,7 +11,7 @@ interface ICommentFormProps {
 }
 
 export function CommentForm({ username }: ICommentFormProps) {
-  const value = useSelector<commentState, string>(state => state.commentText);
+  const value = useSelector<RootState, string>(state => state.comment.commentText);
   const dispatch = useDispatch();
 
   const ref = useRef<HTMLTextAreaElement>(null);
