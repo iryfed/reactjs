@@ -3,15 +3,15 @@ import styles from './searchblock.scss';
 import { Avatar } from './Avatar/Avatar';
 import { SearchBar } from './SearchBar/SearchBar';
 import { Message } from './Message/Message';
-import { userContext } from '../context/userContext';
+import { useUserData } from '../../utils/hooks/useUserData';
 
 
 export function SearchBlock() {
-  const { iconImg, name } = useContext(userContext)
-  
+  const { data, loading } = useUserData();
+    
   return (
     <div className={styles.searchBlock}>
-      <Avatar avatarSrc={iconImg} username={name} />
+      <Avatar avatarSrc={data.iconImg} username={data.name} loading={loading} />
       <SearchBar />
       <Message />
     </div>
