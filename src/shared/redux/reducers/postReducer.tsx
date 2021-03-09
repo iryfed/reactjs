@@ -1,4 +1,7 @@
-import { ActionCreator, Reducer } from "redux";
+import axios from "axios";
+import { Action, ActionCreator, Reducer } from "redux";
+import { ThunkAction } from "redux-thunk";
+import { RootState } from "./rootReducer";
 
 export const POST_REQUEST = 'POST_REQUEST';
 export type PostRequestAction = {
@@ -71,4 +74,22 @@ export const postReducer: Reducer<PostState, PostActions> = (state=initialState,
     default:
       return state;
   }
+}
+
+export const postRequestAsync = (): ThunkAction<void, RootState, unknown, Action<string>> => (dispatch, getState) => {
+    dispatch(PostRequest());
+    
+    axios.get(
+      'https://oauth.reddit.com/best?limit=10',
+      {
+        headers: { Authorization: `bearer ${getState().token.token}`}
+      }
+    ).then((resp) => {
+      const postsData = resp.data;
+     // setData({ dist: postsData.data.dist, postsList: postsData.data.children });
+      dispatch(PostRequestSuccess({ dist: postsData.data.dist, postsList: postsData.data.children }));
+    }).catch((error) => {
+      dispatch(PostRequestError(String(error)));
+    });
+
 }
