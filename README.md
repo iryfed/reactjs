@@ -1,3 +1,3 @@
 # reactjs
 
-Сборка React + Redux + Axios
+Сборка React + Redux + Axios + SSR
